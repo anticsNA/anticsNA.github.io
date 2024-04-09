@@ -1,47 +1,54 @@
-/* <uniquifier>: Use a unique and descriptive class name
-    <weight>: Use a value from 100 to 900 */
-
-/* .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-} */
-body {
-    font-family: 'Inter', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
+/* Reset default browser styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
     background-color: #f0f0f0;
 }
 
+/* Navigation styles */
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logos a {
+    margin: 0 10px;
+}
+
+.nav-logos img {
+    width: 35px;
+    height: auto;
+}
+
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
-nav {
-    background-color: #444;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 10px;
-}
-
+/* Section styles */
 section {
     padding: 20px;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -51,3 +58,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
