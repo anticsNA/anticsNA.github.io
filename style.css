@@ -19,6 +19,8 @@ nav {
 .logo {
     color: #fff;
     text-decoration: none;
+    font-style: italic;
+    font-weight: 600;
     font-size: 30px
 }
 
@@ -34,40 +36,19 @@ nav {
 }
 
 .nav-logos img {
-    width: 30px;
+    width: 35px;
     height: auto;
 }
 
-
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+.menu-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-/* Body styles */
-body {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    background-color: #f0f0f0;
+.menu-bar img {
+    width: 30px; /* Set the width of the menu bar icon */
+    height: auto; /* Maintain aspect ratio */
 }
 
-/* Section styles */
-section {
-    padding: 20px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
