@@ -9,7 +9,7 @@
 nav {
     background-color: #000000;
     color: #fff;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ nav {
     text-decoration: none;
     font-style: italic;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .nav-logos {
@@ -32,11 +32,11 @@ nav {
 }
 
 .nav-logos a {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .nav-logos img {
-    width: 35px;
+    width: 45px;
     height: auto;
 }
 
@@ -48,7 +48,7 @@ nav {
 }
 
 .menu-icon {
-    width: 30px; /* Set the width of the menu bar icon */
+    width: 45px; /* Set the width of the menu bar icon */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -76,4 +76,57 @@ nav {
 
 .menu-bar:hover .dropdown-content {
     display: block;
+}
+
+
+/* Apply styles to the bodyofweb section */
+.bodyofweb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 2rem calc((100vw - 1300px) / 2);
+    font-weight: 100;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Apply styles to the left-hand side */
+.lhs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0rem 2rem;
+}
+
+.lhs h1 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.lhs p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Apply styles to the right-hand side */
+.rhs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+/* Apply styles to the image */
+.rhs img {
+    max-width: 80%; /* Set maximum width to prevent stretching */
+    max-height: 80%; /* Set maximum height to prevent stretching */
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .bodyofweb {
+        grid-template-columns: 1fr;
+    }
 }
