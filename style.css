@@ -1,12 +1,12 @@
 /* Reset default browser styles */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', 'sans-serif';
 }
 
-nav {
+nav{
     background-color: #000000;
     color: #fff;
     height: 80px;
@@ -16,7 +16,7 @@ nav {
     padding: 0rem 20px; /* Adjust padding as needed */
 }
 
-.logo {
+.logo{
     color: #fff;
     text-decoration: none;
     font-style: italic;
@@ -24,35 +24,44 @@ nav {
     font-size: 40px;
 }
 
-.nav-logos {
+.nav-logos{
     display: flex;
     justify-content: center; /* Center the navigation logos horizontally */
     align-items: center;
     flex-grow: 1; /* Make the navigation logos fill the remaining space */
+    gap: 15px;
 }
 
-.nav-logos a {
+.github-logo{
+    background-image: url('octocat-outline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 64px;
+    height: auto;
+}
+
+.nav-logos a{
     margin: 0 15px;
 }
 
-.nav-logos img {
+.nav-logos img{
     width: 45px;
     height: auto;
 }
 
-.menu-bar {
+.menu-bar{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: relative;
 }
 
-.menu-icon {
+.menu-icon{
     width: 45px; /* Set the width of the menu bar icon */
     height: auto; /* Maintain aspect ratio */
 }
 
-.dropdown-content {
+.dropdown-content{
     display: none;
     position: absolute;
     background-color: #333;
@@ -62,25 +71,25 @@ nav {
     right: 0; /* Align the dropdown box with the left edge of the menu icon */
 }
 
-.dropdown-content a {
+.dropdown-content a{
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover{
     background-color: #ddd;
     color: #333;
 }
 
-.menu-bar:hover .dropdown-content {
+.menu-bar:hover .dropdown-content{
     display: block;
 }
 
 
 /* Apply styles to the bodyofweb section */
-.bodyofweb {
+.bodyofweb{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 95vh;
@@ -90,7 +99,7 @@ nav {
 }
 
 /* Apply styles to the left-hand side */
-.lhs {
+.lhs{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,14 +107,14 @@ nav {
     padding: 0rem 2rem;
 }
 
-.lhs h1 {
+.lhs h1{
     font-size: 2.5rem;
 }
 .lhs h2{
     margin-bottom: 1rem;
     font-size: 4rem;
 }
-.lhs p {
+.lhs p{
     margin-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -113,7 +122,7 @@ nav {
 }
 
 /* Apply styles to the right-hand side */
-.rhs {
+.rhs{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,14 +130,55 @@ nav {
 }
 
 /* Apply styles to the image */
-.rhs img {
+.rhs img{
     max-width: 80%; /* Set maximum width to prevent stretching */
     max-height: 80%; /* Set maximum height to prevent stretching */
     border-radius: 10%;
 }
 
-@media screen and (max-width: 768px) {
-    .bodyofweb {
+@media screen and (max-width: 768px){
+    .bodyofweb{
         grid-template-columns: 1fr;
     }
 }
+
+@media screen and (max-width: 768px){
+    .nav-logos{
+        gap: 10px;
+    }
+
+    .nav-logos img{
+        width: 30px; /* Decrease icon size */
+    }
+    
+    .logo{
+        font-size: 30px; /* Reduce "AG" logo size */
+    }
+
+    .menu-icon{
+        width: 35px; /* Reduce menu icon size */
+    }
+}
+
+@media screen and (max-width: 480px){
+    .nav-logos{
+        gap: 5px;
+    }
+
+    .nav-logos img{
+        width: 25px; /* Even smaller for very small screens */
+    }
+
+    .logo{
+        font-size: 25px; /* Further reduce "AG" logo size */
+    }
+
+    .menu-icon{
+        width: 30px;
+    }
+
+    nav{
+        padding: 0rem 10px; /* Reduce padding to save space */
+    }
+}
+
