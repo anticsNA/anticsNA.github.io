@@ -1,13 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website showcasing projects and work">
+    <meta name="author" content="anticsNA">
+    <title>anticsNA - Portfolio</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="#home">anticsNA</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle fade-in-delay">Showcasing my projects and work</p>
+                <a href="#projects" class="btn btn-primary fade-in-delay-2">View Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="intro">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="intro-text">I'm a developer passionate about creating innovative solutions and bringing ideas to life through code.</p>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </section>
+
+        <section id="projects" class="featured-projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Peak Focus</h3>
+                        <p>A productivity web app that helps you stay focused and productive using the Pomodoro Technique and a soft-blocking website approach.
+                          The gamified aspects of our website help keep users motivated and engaged. "Accomplish your peaks one focus session at a time!"</p>
+                        <a href="projects.html" class="project-link">View Project →</a>
+                    </article>
+                    <article class="project-card">
+                        <h3>Pokemon Battle Predictor</h3>
+                        <p>This simple python script uses Machine Learning to predict the outcome of a Pokemon battle based on the Pokemon's stats and abilities.
+                          We used multiple classification models to predict the outcome of the battle.</p>
+                        <a href="projects.html" class="project-link">View Project →</a>
+                    </article>
+                    <article class="project-card">
+                        <h3>Project 3</h3>
+                        <p>Description of your third featured project.</p>
+                        <a href="projects.html" class="project-link">View Project →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Say hello</h3>
+                        <p>Want to collaborate or just chat? Send me a message.</p>
+                        <ul class="contact-list">
+                            <li>
+                                <strong>Email:</strong>
+                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            </li>
+                            <li>
+                                <strong>GitHub:</strong>
+                                <a href="https://github.com/anticsNA" target="_blank" rel="noopener noreferrer">github.com/anticsNA</a>
+                            </li>
+                            <li>
+                                <strong>LinkedIn:</strong>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Your LinkedIn Profile</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send a message</h3>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 anticsNA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
 </html>

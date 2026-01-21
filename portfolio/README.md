@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, static portfolio website built with vanilla HTML, CSS, and JavaScript.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Dark theme design
+- Responsive layout
+- Smooth scrolling animations
+- Scroll-triggered fade-in effects
+- Contact form
+- GitHub Pages ready
 
-## React Compiler
+## Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+portfolio/
+├── index.html          # Main landing page
+├── about.html          # About page
+├── projects.html       # Projects showcase
+├── contact.html        # Contact page
+├── css/
+│   ├── variables.css   # CSS custom properties (dark theme)
+│   ├── main.css        # Main stylesheet
+│   └── animations.css  # Animation utilities
+├── js/
+│   ├── main.js         # Main JavaScript logic
+│   ├── theme.js        # Theme management
+│   └── animations.js   # Scroll animations
+└── assets/
+    ├── images/         # Portfolio images
+    └── icons/          # Icons/SVGs
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Local Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run the site locally, you can use Python's built-in HTTP server:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+python3 -m http.server 8000
 ```
+
+Or use the npm script:
+
+```bash
+npm run dev
+```
+
+Then open `http://localhost:8000` in your browser.
+
+## GitHub Pages Deployment
+
+1. Push your code to the `main` branch (or `master` branch)
+2. Go to your repository settings on GitHub
+3. Navigate to "Pages" in the sidebar
+4. Under "Source", select your branch (usually `main`)
+5. Select `/portfolio` as the folder (or root if you move files)
+6. Click "Save"
+
+Your site will be available at `https://yourusername.github.io/portfolio/`
+
+## Customization
+
+- Edit `css/variables.css` to change colors and theme
+- Update content in HTML files
+- Add your project images to `assets/images/`
+- Modify `js/main.js` for additional functionality
+
+## Browser Support
+
+Modern browsers (Chrome, Firefox, Safari, Edge) with ES6+ support.
