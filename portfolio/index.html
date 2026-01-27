@@ -6,6 +6,9 @@
     <meta name="description" content="Portfolio website showcasing projects and work">
     <meta name="author" content="anticsNA">
     <title>Home -Anthony's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -14,7 +17,7 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="#home">AG</a>
+                <a href="#home"><i>AG</i></a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
@@ -27,10 +30,41 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title fade-in">Anthony's Portfolio</h1>
-                <p class="hero-subtitle fade-in-delay">Showcasing my projects and work</p>
-                <a href="#projects" class="btn btn-primary fade-in-delay-2">View Projects</a>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-arrow up">↑</div>
+                <div class="scroll-arrow down">↓</div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-content">
+                        <p class="hero-role fade-in">Computer Science Graduate</p>
+                        <h1 class="hero-title fade-in-delay">
+                            Anthony Gallegos
+                            <span class="section-number">01</span>
+                        </h1>
+                        <p class="hero-intro fade-in-delay-2">
+                            Hey there! My name is Anthony Gallegos and I'm a Las Vegas based computer science graduate with a Bachelor's degree from the University of Nevada, Las Vegas. I have experience working on projects like Peak Focus, Pokemon Battle Predictor, and Machine Learning classifiers.
+                        </p>
+                        <a href="#about" class="hero-cta fade-in-delay-2">
+                            MORE ABOUT ME →
+                        </a>
+                        <div class="hero-social fade-in-delay-2">
+                            <p class="social-label">FOLLOW ME</p>
+                            <div class="social-links">
+                                <a href="https://github.com/anticsNA" target="_blank" rel="noopener noreferrer">Gh</a>
+                                <a href="www.linkedin.com/in/anthony-gallegos-anticsna" target="_blank" rel="noopener noreferrer">Li</a>
+                                <a href="mailto:anthonymg702@gmail.com">Em</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-image">
+                        <!-- Replace 'images/your-portrait.jpg' with your actual portrait image path -->
+                        <!-- The image will be displayed with a blur effect and cover the entire right panel -->
+                        <img src="images/your-portrait.jpg" alt="Anthony Gallegos" />
+                    </div>
+                </div>
             </div>
         </section>
 
